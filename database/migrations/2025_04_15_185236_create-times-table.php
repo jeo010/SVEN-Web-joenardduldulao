@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('times', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('appointment_id');
-            $table->enum('time',['morning', 'afternoon', 'evening']);
+            $table->enum('time',['Morning', 'Afternoon', 'Evening']);
+            $table->timestamps();
 
             $table->foreign('appointment_id')
                 ->references('id')

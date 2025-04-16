@@ -14,7 +14,8 @@ return new class extends Migration
         Schema::create('days', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger('appointment_id');
-            $table->enum('day',['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']);
+            $table->enum('day',['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']);
+            $table->timestamps();
 
             $table->foreign('appointment_id')
                 ->references('id')
