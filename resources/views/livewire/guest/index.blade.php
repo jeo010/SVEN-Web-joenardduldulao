@@ -49,7 +49,7 @@
                 </div>
             </div>
         </div>
-        <div class="w-full flex flex-col md:flex-rows  " id="book-schedule">
+        <div class="w-full flex flex-col md:flex-row " id="book-schedule">
             <div class="w-full md:w-1/3  bg-[#535973] p-10 md:p-18 text-white flex flex-col gap-6">
                 <a href="#header" class="w-full flex flex-row gap-4 justify-start items-center h-24 cursor-pointer" @click.prevent="document.querySelector('#header').scrollIntoView({ behavior: 'smooth' })">
                     <img class="w-15" src="{{ url('images/logo.png') }}">
@@ -70,7 +70,7 @@
                     </li>
                 </ul>
             </div>
-            <div class="w-full md:w-3/4 bg-[#f7eceb] p-10 md:p-18 flex flex-col gap-10">
+            <div class="w-full md:w-3/4 bg-[#f7eceb] p-10 md:p-18 flex flex-col  gap-10">
                 <div class="text-[#535973] font-bold text-4xl">
                     We'll taker your dog for a walk. Just tell us when!
                 </div>
