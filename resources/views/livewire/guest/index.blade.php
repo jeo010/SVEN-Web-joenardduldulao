@@ -1,5 +1,5 @@
 <div class="flex flex-col">
-    <div class="h-135 bg-center bg-cover bg-no-repeat relative pt-8" style="background-image: url('{{ url('images/dog.webp') }}'); ">
+    <div class="h-150 md:h-135 bg-center bg-cover bg-no-repeat relative pt-8" style="background-image: url('{{ url('images/dog.webp') }}'); ">
         <div class="absolute inset-0 bg-[#535973] opacity-50 "></div>
         <div class="mx-5 sm:mx-auto sm:max-w-7xl relative flex flex-col" id="header">
             <div class="w-full flex flex-row gap-4 justify-center md:justify-start items-center h-24">
@@ -50,7 +50,7 @@
             </div>
         </div>
         <div class="w-full flex flex-col md:flex-row " id="book-schedule">
-            <div class="w-full md:w-1/3  bg-[#535973] p-10 md:p-18 text-white flex flex-col gap-6">
+            <div class="w-full md:w-1/3  bg-[#535973] p-5 md:p-18 text-white flex flex-col gap-6">
                 <a href="#header" class="w-full flex flex-row gap-4 justify-start items-center h-24 cursor-pointer" @click.prevent="document.querySelector('#header').scrollIntoView({ behavior: 'smooth' })">
                     <img class="w-15" src="{{ url('images/logo.png') }}">
                     <span class="text-3xl text-white">PAWTASTIC</span>
@@ -156,7 +156,7 @@
                     <span>
                         Times
                     </span>
-                    <div class="grid grid-cols-3 w-full bg-white">
+                    <div class="grid md:grid-cols-3 w-full bg-white">
                         @php
                             $dayTimes = ['Morning', 'Afternoon', 'Evening'];
                         @endphp
